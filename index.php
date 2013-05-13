@@ -31,21 +31,47 @@
 	    	
 	    	<div class="panel" id="main-panel">
 		    	
-		    	<h1>main panel</h1>
 		    	
-                <div id="weather">WEATHER</div>
-                <div id="test">TEST</div>
+		    	<div class="panel-contents">
+		    	
+			    	<h1>main panel</h1>
+			    	
+	                <div id="weather">WEATHER</div>
+	                <div id="test">TEST</div>
+	
+	                <?php include('lib/api/getWeather.php'); ?>
+	                <h2>Wpisz szukane miasto w formularzu</h2>
+	                <form method="post" action="">
+	
+	                    <input type="text" name="location" value="Wroclaw" />
+	                    <input type="submit" name="submit"/>
+	
+	                </form>
+                
+                </div>
 
-                <?php include('lib/api/getWeather.php'); ?>
-                <h2>Wpisz szukane miasto w formularzu</h2>
-                <form method="post" action="">
-
-                    <input type="text" name="location" value="Wroclaw" />
-                    <input type="submit" name="submit"/>
-
-                </form>
-
-	    	</div>
+	    	</div><!-- / main panel -->
+	    	
+	    	
+	    	<div class="panel" id="days-panel">
+		    	
+		    	<div class="panel-contents">
+			    	
+					prognoza na 3 dni			    	
+			    	
+		    	</div>
+		    	
+	    	</div><!-- / days panel -->
+	    	
+	    	<div class="panel" id="settings-panel">
+		    	
+		    	<div class="panel-contents">
+			    	
+			    	panel ustawień
+			    	
+		    	</div>
+		    	
+	    	</div><!-- / settings panel -->
 	    	
     	</div><!-- / main app screen -->
 

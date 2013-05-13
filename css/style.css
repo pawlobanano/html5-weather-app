@@ -1,5 +1,5 @@
 html, body { font-family: "Helvetica", Arial, sans-serif; margin: 0; padding: 0; }
 
 
-#app { width: 100%; height: 100%; }
-.panel { width: 100%; height: 100%; }
+#app { width: 100%; height: 100%; overflow: hidden; position: relative }
+.panel { width: 100%; height: 100%; position: absolute; display: none; }

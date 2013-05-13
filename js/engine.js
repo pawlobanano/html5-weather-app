@@ -5,13 +5,20 @@ app = {
 
 	init: function() {
 		
-		alert('init');
+		//alert('init');
 		
 		app.getLocation();
 
 		app_panel = $('#app');
 		app_panel.css('width', $(window).width() );
 		app_panel.css('height', $(window).height() );
+		
+		main_panel = $('#main-panel');
+		days_panel = $('#days-panel');
+		settings_panel = $('#settings-panel');
+		
+		main_panel.show();
+		activePanel = 0;
 		
 	},
 
@@ -27,30 +34,74 @@ app = {
 		{
 			app.latitude 	= position.coords.latitude;
 			app.longitude 	= position.coords.longitude;    
+			
+			//alert(app.latitude);
+			//alert(app.longitude);
+			
 		}
-	}
+	},
 	
 	swipeLeft: function() { 
 	
 		alert('left');
+		app.showDaysPanel();
 	
 	},
 
 	swipeRight: function() { 
 	
 		alert('right');
+		if( activePanel != 0) {
+			
+			app.showMainPanel();
+			
+		}
 	},
 	
 	swipeUp: function() { 
 	
 		alert('up');
+		
+		if( activePanel != 2  ){
+			
+			app.showSettingsPanel();
+			
+		}
 	
 	},
 	
 	swipeDown: function() { 
 	
-		alert('down')
+		alert('down');
+		
+		if( activePanel == 2 ) {
+			
+			app.showMainPanel();
+			
+		}
 
-	}			
+	},
+	
+	showMainPanel: function() {
+		
+		$('.panel').hide();
+		main_panel.show();
+		activePanel = 0;
+				
+	},	
+	showDaysPanel: function() {
+		
+		$('.panel').hide();
+		days_panel.show();
+		activePanel = 1;
+		
+	},	
+	showSettingsPanel: function() {
+		
+		$('.panel').hide();
+		settings_panel.show();
+		activePanel = 2;
+		
+	}				
 	
 }
