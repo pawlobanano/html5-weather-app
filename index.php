@@ -37,16 +37,8 @@
 			    	<h1>main panel</h1>
 			    	
 	                <div id="weather">WEATHER</div>
-	                <div id="test">TEST</div>
 	
-	                <?php include('lib/api/getWeather.php'); ?>
-	                <h2>Wpisz szukane miasto w formularzu</h2>
-	                <form method="post" action="">
-	
-	                    <input type="text" name="location" value="Wroclaw" />
-	                    <input type="submit" name="submit"/>
-	
-	                </form>
+
                 
                 </div>
 
@@ -73,6 +65,24 @@
 		    	
 	    	</div><!-- / settings panel -->
 	    	
+	    	<div class="panel" id="new-city-panel">
+		    	
+		    	<div class="panel-contents">
+			    	
+			    	<?php include('lib/api/getWeather.php'); ?>
+	                <h2>Wpisz szukane miasto w formularzu</h2>
+	                <form method="post" action="">
+	
+	                    <input type="text" name="location" value="Wroclaw" />
+	                    <input type="submit" name="submit"/>
+	
+	                </form>
+			    	
+			    	
+		    	</div>
+		    	
+	    	</div><!-- /new city panel -->
+	    	
     	</div><!-- / main app screen -->
 
 
@@ -81,21 +91,6 @@
         <script src="js/engine.js"></script>
         <script src="js/scripts.js"></script>
 
-        <script>
-
-        </script>
-
-        <script>
-        // $.ajax({
-        //     url: "lib/api/getWeather.php",
-        //     data: {
-        //         location: 'Wroclaw'
-        //     },
-        //     success: function( data ) {
-        //         $( "#weather" ).html( "<strong>" + data + "</strong> stopni" );
-        //     }
-        // });
-        </script>
         
     </body>
 </html>

@@ -8,6 +8,7 @@ app = {
 		//alert('init');
 		
 		app.getLocation();
+		app.getWeather();
 
 		app_panel = $('#app');
 		app_panel.css('width', $(window).width() );
@@ -39,6 +40,21 @@ app = {
 			//alert(app.longitude);
 			
 		}
+	},
+	
+	getWeather: function() {
+	
+		$.ajax({
+			type: "POST",
+             url: "lib/api/getWeather.php",
+             data: {
+                 location: 'Wroclaw'
+             },
+             success: function( data ) {
+                 $( "#weather" ).html( "<strong>" + data + "</strong> stopni" );
+             }
+        });	
+		
 	},
 	
 	swipeLeft: function() { 
