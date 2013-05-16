@@ -4,7 +4,6 @@ $(document).ready( function() {
 	
 	var count=0;
 
-	$("#test").html( app.latitude );
 
 	$(".panel").swipe( {
 

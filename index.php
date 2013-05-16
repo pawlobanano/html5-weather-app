@@ -12,7 +12,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+        <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,700|BenchNine:300,400|Quicksand:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+        
 
 
         <!--[if lt IE 9]>
@@ -31,16 +33,35 @@
 	    	
 	    	<div class="panel" id="main-panel">
 		    	
-		    	
 		    	<div class="panel-contents">
 		    	
-			    	<h1>main panel</h1>
 			    	
-	                <div id="weather">WEATHER</div>
-	
-
+			    	<div class="top-left">TERAZ:</div>
+			    	
+			    	<div class="temp">
+				    	12 <span>o</span>
+			    	</div>
+			    	
+			    	<div class="sky">
+				    	<div class="image">
+					    	image
+				    	</div>
+				    	<div class="desc">
+					    	<p>asdasd</p>
+					    	<p>asdasd2</p>
+				    	</div>
+			    	</div>
+			    	
+			    	<div class="more-info">
+				    	
+				    	more info
+				    	
+			    	</div>
+			    	
+			    	
+			    	
                 
-                </div>
+                </div><!-- / panel contents -->
 
 	    	</div><!-- / main panel -->
 	    	
@@ -49,7 +70,21 @@
 		    	
 		    	<div class="panel-contents">
 			    	
-					prognoza na 3 dni			    	
+					<div class="days-forecast">
+						
+						<div class="day">
+							<div class="left">
+								<div class="date">20.05.2013</div>
+							</div>
+							
+							<div class="weather-data">
+								
+								
+								
+							</div>
+						</div>
+						
+					</div><!-- forecast for 3 days -->		    	
 			    	
 		    	</div>
 		    	
@@ -69,7 +104,7 @@
 		    	
 		    	<div class="panel-contents">
 			    	
-			    	<?php include('lib/api/getWeather.php'); ?>
+			    	<?php //include('lib/api/getWeather.php'); ?>
 	                <h2>Wpisz szukane miasto w formularzu</h2>
 	                <form method="post" action="">
 	
@@ -85,12 +120,12 @@
 	    	
     	</div><!-- / main app screen -->
 
-
+    	
         <script src="js/jquery.1.9.1.js"></script>
-        <script src="lib/touchswipe/jquery.touchSwipe.min.js"></script>
+        <script src="lib/touchswipe/jquery.touchSwipe.min.jsx"></script>
         <script src="js/engine.js"></script>
         <script src="js/scripts.js"></script>
-
+        
         
     </body>
 </html>
