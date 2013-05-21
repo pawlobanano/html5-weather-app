@@ -171,7 +171,7 @@
     	</div><!-- / main app screen -->
 
     	
-        <script src="js/jquery.1.9.1.js"></script>
+        <script src="js/jquery.1.9.1.min.js"></script>
         <script src="lib/touchswipe/jquery.touchSwipe.min.js"></script>
         <script src="js/engine.js"></script>
         <script src="js/scripts.js"></script>

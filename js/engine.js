@@ -48,7 +48,7 @@ app = {
 			type: "POST",
              url: "lib/api/getWeather.php",
              data: {
-                 location: 'Wroclaw'
+                 //location: 'Wroclaw',
              },
              success: function( data ) {
                  $( "#weather" ).html( "<strong>" + data + "</strong> stopni" );
@@ -68,29 +68,23 @@ app = {
 
 	swipeRight: function() { 
 	
-		if( activePanel == 1) {	
+		if( activePanel == 1 ) {	
 			app.showMainPanel();
 		}
 	},
 	
 	swipeUp: function() { 
 	
-		
-		if( activePanel != 2  ){
-			
+		if( activePanel != 2 && activePanel != 1) {
 			app.showSettingsPanel();
-			
 		}
 	
 	},
 	
 	swipeDown: function() { 
 	
-		
 		if( activePanel == 2 ) {
-			
 			app.showMainPanel();
-			
 		}
 
 	},
