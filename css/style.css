@@ -27,16 +27,22 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #main-panel .top-left { font-size: 16px; top: 30px; left: 15px; position: absolute; }
 #main-panel .top-left .city-date { margin: 0; font-size: 0.9em; }
 #main-panel .top-left .now { margin: 0 0 5px 0; text-transform: uppercase; }
-#main-panel .temp { width: 100%; position: absolute; top: 80px; left: 0; font-size: 86px; text-align: center; font-weight: 100; }
+#main-panel .temp { width: 100%;top: 80px; position: relative; left: 0; font-size: 86px; text-align: center; font-weight: 100;  }
 #main-panel .temp span { position: absolute; top: 0; right: 33%; font-size: 24px; font-weight: bold; }
-#main-panel .sky { width: 100%; position: absolute; left: 0; border: 1px solid red; top: 200px; }
-#main-panel .more-info { position: absolute; width: 100%; left: 0; bottom: 0;  }
+#main-panel .sky { width: 100%;  left: 0;  margin: 120px 0 0; }
+#main-panel .sky .image { width: 220px; height: 150px; margin: 0  auto; }
+#main-panel .sky p { margin: 0; text-align: center; padding: 0 5px 5px; }
+#main-panel .more-info {  left: 0; bottom: 0; padding: 10px 20px 0 0; text-align: right;   }
 
 
 #days-panel { }
-#days-panel .day { width: 95%;}
-#days-panel .date { float: left; width: 30%;}
-#days-panel .temp { position: relative; float: left; font-size: 32px;  }
-#days-panel .temp span { position: absolute; top: 0; right: -5%; font-size: 12px; font-weight: bold; }
-#days-panel .more-info { }
-#days-panel .more-info p {}
+#days-panel .panel-contents { padding-top: 50px; }
+#days-panel .day { width: 95%; border-top: 1px solid #ffffff; border-bottom: 1px solid #f1f1f1; }
+#days-panel .date { float: left; padding: 15px 30px 0 10px; }
+#days-panel .sky { float: left; width: 150px; height: 80px; margin: 10px 5px 0 15px; }
+#days-panel .temp { position: relative; float: left; font-size: 32px; padding: 20px 10px 0 20px;  }
+#days-panel .temp span { position: absolute; top: 30%; right: -2%; font-size: 12px; font-weight: bold; }
+#days-panel .more-info { clear: both; }
+#days-panel .more-info p { float: left; width: 40%; padding: 10px; margin: 0; }
+
+#settings-panel { text-align: center; font-size: 12px; }

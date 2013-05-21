@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Weatherek</title>
+        <title>PaToWeather</title>
 		<meta name="keywords" content="" />
 		<meta name="author" content="" />        
         <meta name="description" content="">
@@ -144,8 +144,8 @@
 		    	
 		    	<div class="panel-contents">
 			    	
-			    	panel ustawień
-			    	
+					<h2>panel ustawień</h2>
+								    	
 		    	</div>
 		    	
 	    	</div><!-- / settings panel -->

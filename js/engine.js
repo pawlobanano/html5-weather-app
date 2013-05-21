@@ -60,24 +60,21 @@ app = {
 	
 	swipeLeft: function() { 
 	
-		alert('left');
-		app.showDaysPanel();
+		if( activePanel == 0 ) {
+			app.showDaysPanel();
+		}
 	
 	},
 
 	swipeRight: function() { 
 	
-		alert('right');
-		if( activePanel != 0) {
-			
+		if( activePanel == 1) {	
 			app.showMainPanel();
-			
 		}
 	},
 	
 	swipeUp: function() { 
 	
-		alert('up');
 		
 		if( activePanel != 2  ){
 			
@@ -89,7 +86,6 @@ app = {
 	
 	swipeDown: function() { 
 	
-		alert('down');
 		
 		if( activePanel == 2 ) {
 			
