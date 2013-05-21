@@ -6,6 +6,15 @@ font-family: 'Dosis', sans-serif;
 font-family: 'BenchNine', sans-serif;
 font-family: 'Quicksand', sans-serif;
 */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
 
 #app { width: 100%; height: 100%; overflow: hidden; position: relative }
 .panel { width: 100%; height: 100%; position: absolute; display: none; background: #fafafa; }
@@ -15,9 +24,19 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 
 .panel-contents { width: 90%; height: 90%; margin: 2% auto 0; border: 1px solid #fff; border-radius: 1em; box-shadow: 0 1px 3px #ccc; position: relative; }
 
-#main-panel .top-left { font-size: 16px; top: 50px; left: 15px; position: absolute; }
+#main-panel .top-left { font-size: 16px; top: 30px; left: 15px; position: absolute; }
+#main-panel .top-left .city-date { margin: 0; font-size: 0.9em; }
+#main-panel .top-left .now { margin: 0 0 5px 0; text-transform: uppercase; }
 #main-panel .temp { width: 100%; position: absolute; top: 80px; left: 0; font-size: 86px; text-align: center; font-weight: 100; }
 #main-panel .temp span { position: absolute; top: 0; right: 33%; font-size: 24px; font-weight: bold; }
 #main-panel .sky { width: 100%; position: absolute; left: 0; border: 1px solid red; top: 200px; }
 #main-panel .more-info { position: absolute; width: 100%; left: 0; bottom: 0;  }
+
+
 #days-panel { }
+#days-panel .day { width: 95%;}
+#days-panel .date { float: left; width: 30%;}
+#days-panel .temp { position: relative; float: left; font-size: 32px;  }
+#days-panel .temp span { position: absolute; top: 0; right: -5%; font-size: 12px; font-weight: bold; }
+#days-panel .more-info { }
+#days-panel .more-info p {}

@@ -7,8 +7,8 @@ app = {
 		
 		//alert('init');
 		
-		//app.getLocation();
-		//app.getWeather();
+		app.getLocation();
+		app.getWeather();
 
 		app_panel = $('#app');
 		app_panel.css('width', $(window).width() );

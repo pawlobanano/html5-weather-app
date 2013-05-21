@@ -36,7 +36,10 @@
 		    	<div class="panel-contents">
 		    	
 			    	
-			    	<div class="top-left">TERAZ:</div>
+			    	<div class="top-left">
+				    	<p class="now">teraz:</p>
+				    	<p class="city-date">Wrocław, 20.05.2013</p>
+			    	</div>
 			    	
 			    	<div class="temp">
 				    	12 <span>o</span>
@@ -69,25 +72,72 @@
 	    	<div class="panel" id="days-panel">
 		    	
 		    	<div class="panel-contents">
-			    	
-					<div class="days-forecast">
-						
-						<div class="day">
-							<div class="left">
-								<div class="date">20.05.2013</div>
-							</div>
-							
-							<div class="weather-data">
-								
-								
-								
-							</div>
-						</div>
-						
-					</div><!-- forecast for 3 days -->		    	
-			    	
-		    	</div>
 		    	
+			    	<div class="day cf">
+				    	
+				    	<div class="date">
+					    	<p>21.05.2013</p>
+				    	</div>
+
+				    	<div class="temp">
+					    	12 <span>o</span>
+				    	</div>
+				    	
+				    	<div class="sky">
+					    	<div class="image">image</div>	
+				    	</div>
+				    	
+				    	<div class="more-info">
+					    	<p>more info</p>
+					    	<p>more info</p>
+				    	</div>
+			    	
+			    	</div><!-- / single day -->			    	
+
+			    	<div class="day cf">
+				    	
+				    	<div class="date">
+					    	<p>22.05.2013</p>
+				    	</div>
+
+				    	<div class="temp">
+					    	12 <span>o</span>
+				    	</div>
+				    	
+				    	<div class="sky">
+					    	<div class="image">image</div>	
+				    	</div>
+				    	
+				    	<div class="more-info">
+					    	<p>more info</p>
+					    	<p>more info</p>
+				    	</div>
+			    	
+			    	</div><!-- / single day -->		
+			    	
+			    	<div class="day cf">
+				    	
+				    	<div class="date">
+					    	<p>23.05.2013</p>
+				    	</div>
+
+				    	<div class="temp">
+					    	12 <span>o</span>
+				    	</div>
+				    	
+				    	<div class="sky">
+					    	<div class="image">image</div>	
+				    	</div>
+				    	
+				    	<div class="more-info">
+					    	<p>more info</p>
+					    	<p>more info</p>
+				    	</div>
+			    	
+			    	</div><!-- / single day -->					    				    	
+                
+                </div><!-- / panel contents -->
+
 	    	</div><!-- / days panel -->
 	    	
 	    	<div class="panel" id="settings-panel">
@@ -122,7 +172,7 @@
 
     	
         <script src="js/jquery.1.9.1.js"></script>
-        <script src="lib/touchswipe/jquery.touchSwipe.min.jsx"></script>
+        <script src="lib/touchswipe/jquery.touchSwipe.min.js"></script>
         <script src="js/engine.js"></script>
         <script src="js/scripts.js"></script>
         
