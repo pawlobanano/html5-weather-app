@@ -50,8 +50,7 @@
 					    	image
 				    	</div>
 				    	<div class="desc">
-					    	<p>asdasd</p>
-					    	<p>asdasd2</p>
+					    	<p>xx</p>
 				    	</div>
 			    	</div>
 			    	
