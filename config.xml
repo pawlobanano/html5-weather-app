@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.audero.free.player.auderoaudioplayer"
+        version   = "1.0.0">
+   <name>PWR Weather App</name>
+   <description>Learning project</description>
+   <author href="http://www.audero.it" email="aurelioderosa@gmail.com">Aurelio De Rosa</author>
+   <feature name="http://api.phonegap.com/1.0/network"/>
+   <feature name="http://api.phonegap.com/1.0/media"/>
+   <feature name="http://api.phonegap.com/1.0/file"/>
+   <feature name="http://api.phonegap.com/1.0/notification"/>
+   <preference name="phonegap-version" value="2.3.0" />
+   <preference name="target-device" value="universal" />
+   <access origin="*" />
+   <!-- Icons -->
+   <icon src="icon.png" width="64" height="64" gap:role="default" />
+   <icon src="images/icon-72x72.png" width="72" height="72" gap:platform="android" gap:density="hdpi" />
+   <icon src="images/icon-96x96.png" width="96" height="96" gap:platform="android" gap:density="xhdpi" />
+   <icon src="images/icon-72x72.png" width="72" height="72" gap:platform="ios" />
+</widget>
