@@ -31,7 +31,7 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #main-panel .top-left .city-date { margin: 0; font-size: 0.9em; }
 #main-panel .top-left .now { margin: 0 0 5px 0; text-transform: uppercase; }
 #main-panel .temp_c { width: 100%;top: 80px; position: relative; left: 0; font-size: 86px; text-align: center; font-weight: 100;  }
-#main-panel .temp_c span { position: absolute; top: 0; right: 33%; font-size: 24px; font-weight: bold; }
+#main-panel .temp_c .degree { position: absolute; top: 0; right: 33%; font-size: 24px; font-weight: bold; }
 #main-panel .sky { width: 100%;  left: 0;  margin: 120px 0 0; }
 #main-panel .sky .image { width: 220px; height: 150px; margin: 0  auto; }
 #main-panel .sky p { margin: 0; text-align: center; padding: 0 5px 5px; }

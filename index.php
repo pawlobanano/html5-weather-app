@@ -42,7 +42,7 @@
 			    	</div>
 			    	
 			    	<div class="temp_c">
-				    	12 <span>o</span>
+				    	<span class="value"></span> <span class="degree">o</span>
 			    	</div>
 			    	
 			    	<div class="sky">

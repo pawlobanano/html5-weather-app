@@ -62,7 +62,7 @@ app = {
                  location: 'Wroclaw',
              },
              success: function( data ) {
-                 $( ".temp_c" ).html( data.temp_c );
+                 $( ".temp_c .value" ).html( data.temp_c );
                  $("span.city").html( data.city );
              }
         });	
