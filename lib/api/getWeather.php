@@ -9,7 +9,7 @@
 
 
     // Api logic
-    $json_string    = file_get_contents("http://api.wunderground.com/api/$API_KEY/geolookup/conditions/q/$loc.json");
+    $json_string    = file_get_contents("http://api.wunderground.com/api/$API_KEY/geolookup/forecast/conditions/lang:PL/q/$loc.json");
     $parsed_json    = json_decode($json_string);
 
     
@@ -35,7 +35,8 @@
     
     $arr = array (
     	'city' 		=> $city,
-    	'temp_c' 	=> $temp_c
+    	'temp_c' 	=> $temp_c,
+    	'desc'		=> $weather
     );
     echo json_encode($arr);
     

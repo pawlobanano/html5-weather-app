@@ -46,11 +46,9 @@
 			    	</div>
 			    	
 			    	<div class="sky">
-				    	<div class="image">
-					    	image
-				    	</div>
+				    	<div class="sky-image"></div>
 				    	<div class="desc">
-					    	<p>xx</p>
+					    	<p></p>
 				    	</div>
 			    	</div>
 			    	
@@ -83,7 +81,7 @@
 				    	</div>
 				    	
 				    	<div class="sky">
-					    	<div class="image">image</div>	
+					    	<div class="sky-image-days"></div>	
 				    	</div>
 				    	
 				    	<div class="more-info">

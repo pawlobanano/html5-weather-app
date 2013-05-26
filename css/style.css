@@ -49,3 +49,6 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #days-panel .more-info p { float: left; width: 40%; padding: 10px; margin: 0; }
 
 #settings-panel { text-align: center; font-size: 12px; }
+
+.sky .sky-image { width: 100%; height: 128px; }
+.sky .sky-14 { background:url(../images/tick/cloudy4.png) no-repeat center center;  }

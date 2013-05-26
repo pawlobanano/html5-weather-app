@@ -64,6 +64,9 @@ app = {
              success: function( data ) {
                  $( ".temp_c .value" ).html( data.temp_c );
                  $("span.city").html( data.city );
+                 $(".desc p").html( data.desc );
+                 
+                 app.setSkyImage( data.desc );
              }
         });	
         
@@ -74,6 +77,13 @@ app = {
 	        
         } );
 		*/
+	},
+	
+	setSkyImage: function( sky ) {
+	
+		console.log( sky.length );
+		$('.sky-image').addClass( 'sky-'+sky.length );
+		
 	},
 	
 	swipeLeft: function() { 
