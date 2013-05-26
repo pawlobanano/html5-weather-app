@@ -44,18 +44,36 @@ app = {
 	
 	getWeather: function() {
 	
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+
+		var yyyy = today.getFullYear();
+		if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = mm+'/'+dd+'/'+yyyy;
+		
+		$('span.date').html( today );
+		
+			
 		$.ajax({
 			type: "POST",
              url: "lib/api/getWeather.php",
+             dataType: 'json',
              data: {
-                 //location: 'Wroclaw',
+                 location: 'Wroclaw',
              },
              success: function( data ) {
-                 $( "#weather" ).html( "<strong>" + data + "</strong> stopni" );
+                 $( ".temp_c" ).html( data.temp_c );
+                 $("span.city").html( data.city );
              }
         });	
         
-		
+        /*
+        $.getJSON( "lib/api/getWeather.php", function( data) {
+	        
+	        console.log( data );
+	        
+        } );
+		*/
 	},
 	
 	swipeLeft: function() { 

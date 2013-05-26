@@ -12,7 +12,7 @@
     $json_string    = file_get_contents("http://api.wunderground.com/api/$API_KEY/geolookup/conditions/q/$loc.json");
     $parsed_json    = json_decode($json_string);
 
-
+    
     // Get information from API query
     $city           = $parsed_json  ->  {'location'}            ->  {'city'};
     $country_name   = $parsed_json  ->  {'location'}            ->  {'country_name'};
@@ -27,5 +27,21 @@
     $weather        = $parsed_json  ->  {'current_observation'} ->  {'weather'};    
     $visibility_km  = $parsed_json  ->  {'current_observation'} ->  {'visibility_km'};
     
-    // Testing string
-    echo "Obecna temperatura w ${city} to: ${temp_c}";
+    //$weather_data = array( $temp_c );
+    
+    //echo json_encode( $weather_data );
+    
+    
+    
+    $arr = array (
+    	'city' 		=> $city,
+    	'temp_c' 	=> $temp_c
+    );
+    echo json_encode($arr);
+    
+    //temp_c = 1;
+    
+    
+    
+    //echo json_encode( $temp_c );
+    

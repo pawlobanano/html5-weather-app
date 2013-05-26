@@ -38,10 +38,10 @@
 			    	
 			    	<div class="top-left">
 				    	<p class="now">teraz:</p>
-				    	<p class="city-date">Wrocław, 20.05.2013</p>
+				    	<p class="city-date"><span class="city"></span>, <span class="date">20.05.2013</span></p>
 			    	</div>
 			    	
-			    	<div class="temp">
+			    	<div class="temp_c">
 				    	12 <span>o</span>
 			    	</div>
 			    	
