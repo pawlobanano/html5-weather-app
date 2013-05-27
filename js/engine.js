@@ -93,8 +93,8 @@ app = {
 	
 	setCurrentForecast: function( data ) {
 	
-	     $("#main-panel .temp_c .value" ).html( data.temp_c );
-	     $("#main-panel .feelslike_c .value" ).html( data.feelslike_c );
+	     $("#main-panel .temp_c .value" ).html( Math.round(data.temp_c) );
+	     $("#main-panel .feelslike_c .value" ).html( Math.round(data.feelslike_c) );
 	     $("#main-panel span.city").html( data.city );
 	     $("#main-panel .desc p").html( data.desc );
 	     $("#main-panel .more-info").append("<p>Ciśnienie: "+data.pressure_mb+"</p>");
