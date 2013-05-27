@@ -2,6 +2,7 @@ $(document).ready( function() {
 	
 	app.init();
 	
+	
 
 
 	$(".panel").swipe( {

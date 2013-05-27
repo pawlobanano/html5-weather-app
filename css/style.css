@@ -18,6 +18,7 @@ font-family: 'Quicksand', sans-serif;
 .cf:after {
     clear: both;
 }
+.hidden { display: none; }
 
 #app { width: 100%; height: 100%; overflow: hidden; position: relative }
 .panel { width: 90%; height: 80%; position: absolute; display: none; background: #fafafa; left: 5%; top: 10%; bpx }
@@ -27,15 +28,24 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 
 .panel-contents { width: 100%; height: 100%; position: relative; }
 
-#main-panel .top-left { font-size: 16px; top: 30px; left: 15px; position: absolute; }
-#main-panel .top-left .city-date { margin: 0; font-size: 0.9em; }
-#main-panel .top-left .now { margin: 0 0 5px 0; text-transform: uppercase; }
-#main-panel .temp_c { width: 100%;top: 80px; position: relative; left: 0; font-size: 86px; text-align: center; font-weight: 100;  }
-#main-panel .temp_c .degree { position: absolute; top: 0; right: 33%; font-size: 24px; font-weight: bold; }
-#main-panel .sky { width: 100%;  left: 0;  margin: 120px 0 0; }
+#main-panel .top-left { font-size: 16px; width: 100%; height: 30px; background: #6babee; border-top: 1px solid #7bbbfe; padding: 10px 0 0; border-bottom: 1px solid #999; text-align: center; color: #ebebeb; text-shadow: 0 1px 0 #333; }
+#main-panel .top-left .city-date { margin: 0; font-size: 1em; }
+#main-panel .top-left .now { padding: 0 5px 0 0; text-transform: uppercase; font-weight: bold; }
+#main-panel .temp-wrap { position: relative; height: 136px;  }
+#main-panel .temp_c { width: 100%; position: absolute; left: 0; text-align: center;  padding: 20px 0 10px; top: 0;  }
+#main-panel .temp_c .value { position: relative; font-size: 86px; line-height: 86px;  text-align: center; font-weight: 100; color: #353535; }
+#main-panel .temp_c .value:after { content: "o"; position: absolute; top: -20px; right: -15px; font-size: 24px; font-weight: bold; }
+#main-panel .temp_c .label { margin: 0; }
+
+#main-panel .feelslike_c { width: 100%; position: absolute; left: 0; text-align: center;  padding: 20px 0 10px; top: 0; display: none;  }
+#main-panel .feelslike_c .value { position: relative; font-size: 86px; line-height: 86px;  text-align: center; font-weight: 100; color: #353535; }
+#main-panel .feelslike_c .value:after { content: "o"; position: absolute; top: -20px; right: -15px; font-size: 24px; font-weight: bold; }
+#main-panel .feelslike_c .label { margin: 0; }
+#main-panel .sky { width: 100%;  left: 0;  margin: 20px 0 0; }
 #main-panel .sky .image { width: 220px; height: 150px; margin: 0  auto; }
 #main-panel .sky p { margin: 0; text-align: center; padding: 0 5px 5px; }
-#main-panel .more-info {  left: 0; bottom: 0; padding: 10px 20px 0 0; text-align: right;   }
+#main-panel .more-info { margin: 30px 0 0; }
+#main-panel .more-info p { text-align: right; margin: 0 20px 10px 0; font-size: 0.9em; max-width: 60%; line-height: 1.3em; float: right; clear: both; }
 
 
 #days-panel { }
@@ -51,4 +61,6 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #settings-panel { text-align: center; font-size: 12px; }
 
 .sky .sky-image { width: 100%; height: 128px; }
-.sky .sky-14 { background:url(../images/tick/cloudy4.png) no-repeat center center;  }
+.sky .sky-8 { background: url(../images/tick/sunny.png) no-repeat center center; }
+.sky .sky-23 { background: url(../images/tick/cloudy1.png) no-repeat center center; }
+.sky .sky-14 { background: url(../images/tick/cloudy4.png) no-repeat center center;  }

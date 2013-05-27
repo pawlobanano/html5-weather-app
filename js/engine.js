@@ -7,7 +7,7 @@ app = {
 		
 		//alert('init');
 		
-		app.getLocation();
+		//app.getLocation();
 		app.getWeather();
 
 		app_panel = $('#app');
@@ -20,6 +20,8 @@ app = {
 		
 		main_panel.show();
 		activePanel = 0;
+		
+		app.setTodayForecast();
 		
 	},
 
@@ -62,11 +64,11 @@ app = {
                  location: 'Wroclaw',
              },
              success: function( data ) {
-                 $( ".temp_c .value" ).html( data.temp_c );
-                 $("span.city").html( data.city );
-                 $(".desc p").html( data.desc );
-                 
+
+	             app.setCurrentForecast( data );
                  app.setSkyImage( data.desc );
+                 
+                 /* !!!!! that the spot! for teh errors : "przepraszamy nie mamy informacji, błąd połączenia" */
              }
         });	
         
@@ -79,12 +81,28 @@ app = {
 		*/
 	},
 	
+	setCurrentForecast: function( data ) {
+	
+	     $( ".temp_c .value" ).html( data.temp_c );
+	     $( ".feelslike_c .value" ).html( data.feelslike_c );
+	     $("span.city").html( data.city );
+	     $(".desc p").html( data.desc );
+	     $(".more-info").append("<p>Ciśnienie: "+data.pressure_mb+"</p>");
+	     $(".more-info").append("<p>"+data.fcttext_metric+"</p>");	
+	     	
+	},
+	
+	set3DayForecast: function( data ) {
+		
+		
+	},
 	setSkyImage: function( sky ) {
 	
 		console.log( sky.length );
 		$('.sky-image').addClass( 'sky-'+sky.length );
 		
 	},
+
 	
 	swipeLeft: function() { 
 	
@@ -140,3 +158,17 @@ app = {
 	}				
 	
 }
+
+$('.temp-wrap').on('click', function() {
+	
+	$(this).children('.temp_c').slideToggle();
+	$(this).children('.feelslike_c').slideToggle();
+	
+});
+
+
+
+
+
+
+

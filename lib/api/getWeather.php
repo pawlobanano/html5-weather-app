@@ -26,6 +26,7 @@
     $temp_c         = $parsed_json  ->  {'current_observation'} ->  {'temp_c'};
     $weather        = $parsed_json  ->  {'current_observation'} ->  {'weather'};    
     $visibility_km  = $parsed_json  ->  {'current_observation'} ->  {'visibility_km'};
+    $fcttext_metric = $parsed_json 	-> 	{'forecast'} 			-> 	{'forecastday'} 	-> {'fcttext_metric'};
     
     //$weather_data = array( $temp_c );
     
@@ -34,9 +35,12 @@
     
     
     $arr = array (
-    	'city' 		=> $city,
-    	'temp_c' 	=> $temp_c,
-    	'desc'		=> $weather
+    	'city' 			=> $city,
+    	'temp_c' 		=> $temp_c,
+    	'desc'			=> $weather,
+    	'feelslike_c'	=> $feelslike_c,
+    	'fcttext_metric'=> $fcttext_metric,
+    	'pressure_mb'	=> $pressure_mb
     );
     echo json_encode($arr);
     

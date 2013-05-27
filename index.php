@@ -37,25 +37,30 @@
 		    	
 			    	
 			    	<div class="top-left">
-				    	<p class="now">teraz:</p>
-				    	<p class="city-date"><span class="city"></span>, <span class="date">20.05.2013</span></p>
+				    	<span class="now">teraz:</span>
+				    	<span class="city-date"><span class="city"></span>, <span class="date"></span></span>
 			    	</div>
 			    	
-			    	<div class="temp_c">
-				    	<span class="value"></span> <span class="degree">o</span>
+			    	<div class="temp-wrap">
+				    	<div class="temp_c">
+					    	<span class="value"></span>
+					    	<p class="label">średnia</p>
+				    	</div>
+				    	
+				    	<div class="feelslike_c">
+					    	<span class="value"></span>
+					    	<p class="label">odczuwalna</p>
+				    	</div>			    	
 			    	</div>
-			    	
 			    	<div class="sky">
 				    	<div class="sky-image"></div>
 				    	<div class="desc">
-					    	<p></p>
+					    	<p>niewielkie zachmurzenie</p>
 				    	</div>
 			    	</div>
 			    	
 			    	<div class="more-info">
-				    	
-				    	more info
-				    	
+				    					    	
 			    	</div>
 			    	
 			    	
