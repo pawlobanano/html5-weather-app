@@ -1,14 +1,15 @@
 app = {
 	
-	latitude: 0,
-	longitude: 0,
 
 	init: function() {
 		
 		//alert('init');
 		
-		//app.getLocation();
+		app.getLocation();
 		app.getWeather();
+		
+		latitude = 0;
+		longtitude = 0;
 
 		app_panel = $('#app');
 		app_panel.css('width', $(window).width() );
@@ -21,31 +22,23 @@ app = {
 		main_panel.show();
 		activePanel = 0;
 		
-		app.setTodayForecast();
 		
 	},
 
 	getLocation: function() {
 
-		if (navigator.geolocation)
-		{
-			navigator.geolocation.getCurrentPosition(showPosition);
-		}
-		else {}
 
-        function showPosition(position)
-		{
-			app.latitude 	= position.coords.latitude;
-			app.longitude 	= position.coords.longitude;    
-			
-			//alert(app.latitude);
-			//alert(app.longitude);
-			
-		}
+		
+		
+		
 	},
 	
 	getWeather: function() {
 	
+	
+		var latitude = 0;
+		var longitude = 0;
+		
 		var today = new Date();
 		var dd = today.getDate();
 		var mm = today.getMonth()+1; //January is 0!
@@ -55,40 +48,57 @@ app = {
 		
 		$('span.date').html( today );
 		
-			
-		$.ajax({
-			type: "POST",
-             url: "lib/api/getWeather.php",
-             dataType: 'json',
-             data: {
-                 location: 'Wroclaw',
-             },
-             success: function( data ) {
+		
+		if (navigator.geolocation)
+		{
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+		else {}
 
-	             app.setCurrentForecast( data );
-                 app.setSkyImage( data.desc );
-                 
-                 /* !!!!! that the spot! for teh errors : "przepraszamy nie mamy informacji, błąd połączenia" */
-             }
-        });	
+        function showPosition(position)
+		{
+			latitude 	= position.coords.latitude;
+			longitude 	= position.coords.longitude;
+			
+			loc = latitude+","+longitude;	
+			    
+			    
+			$.ajax({
+				type: "POST",
+	             url: "lib/api/getWeather.php",
+	             dataType: 'json',
+	             data: {
+	                 location: loc,
+	             },
+	             success: function( data ) {
+	
+		             app.setCurrentForecast( data );
+	                 app.setSkyImage( data.desc );
+	                 
+	             },
+	             error: function () {
+		             
+		             alert("Błąd podczas pobierania danych");
+		             
+	             }
+	        });				    
+			    
+		}
+
+						
+
         
-        /*
-        $.getJSON( "lib/api/getWeather.php", function( data) {
-	        
-	        console.log( data );
-	        
-        } );
-		*/
+
 	},
 	
 	setCurrentForecast: function( data ) {
 	
-	     $( ".temp_c .value" ).html( data.temp_c );
-	     $( ".feelslike_c .value" ).html( data.feelslike_c );
-	     $("span.city").html( data.city );
-	     $(".desc p").html( data.desc );
-	     $(".more-info").append("<p>Ciśnienie: "+data.pressure_mb+"</p>");
-	     $(".more-info").append("<p>"+data.fcttext_metric+"</p>");	
+	     $("#main-panel .temp_c .value" ).html( data.temp_c );
+	     $("#main-panel .feelslike_c .value" ).html( data.feelslike_c );
+	     $("#main-panel span.city").html( data.city );
+	     $("#main-panel .desc p").html( data.desc );
+	     $("#main-panel .more-info").append("<p>Ciśnienie: "+data.pressure_mb+"</p>");
+	     $("#main-panel .more-info").append("<p>"+data.fcttext_metric+"</p>");	
 	     	
 	},
 	
