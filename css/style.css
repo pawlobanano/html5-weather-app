@@ -21,7 +21,8 @@ font-family: 'Quicksand', sans-serif;
 .hidden { display: none; }
 
 #app { width: 100%; height: 100%; overflow: hidden; position: relative }
-.panel { width: 90%; height: 80%; position: absolute; display: none; background: #fafafa; left: 5%; top: 5%; }
+.panel-wrap { position: relative; width: 100%; height: 100%; }
+.panel { width: 90%; height: 80%; position: absolute; background: #fafafa; left: 5%; top: 5%; }
 
 h1 { color: #4d6171; text-align: center; font-size: 2em; }
 h1 span { color: #8a9db7; font-size: 0.8em; }
@@ -31,9 +32,9 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 
 #main-panel .top-left .city-date { margin: 0; font-size: 1em; }
 #main-panel .top-left .now { padding: 0 5px 0 0; text-transform: uppercase; font-weight: bold; }
-#main-panel .temp-wrap { position: relative; height: 136px;  }
-#main-panel .temp_c { width: 100%; position: absolute; left: 0; text-align: center;  padding: 20px 0 10px; top: 0;  }
-#main-panel .temp_c .value { position: relative; font-size: 86px; line-height: 86px;  text-align: center; font-weight: 100; color: #353535; }
+#main-panel .temp-wrap { position: relative; height: 100px;  }
+#main-panel .temp_c { width: 100%; position: absolute; left: 0; text-align: center;  padding: 10px 0 10px; top: 0;  }
+#main-panel .temp_c .value { position: relative; font-size: 70px; line-height: 70px;  text-align: center; font-weight: 100; color: #353535; }
 #main-panel .temp_c .value:after { content: "o"; position: absolute; top: -20px; right: -15px; font-size: 24px; font-weight: bold; }
 #main-panel .temp_c .label { margin: 0; }
 
@@ -47,8 +48,10 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #main-panel .more-info { margin: 30px 0 0; }
 #main-panel .more-info p { text-align: right; margin: 0 20px 10px 0; font-size: 0.9em; max-width: 60%; line-height: 1.3em; float: right; clear: both; }
 
-#settings-panel { text-align: center; font-size: 12px; }
+#settings-panel { text-align: center; font-size: 12px; top: 110%; }
 
+
+#days-panel { position: absolute; left: 110%; }
 #days-panel .top-panel { text-align: left; height: 20px; padding: 3px 0 0; text-indent: 20px; margin: 0 0 5px 0; }
 #days-panel .days-temp_c { width: 25%; position: relative; text-align: center; float: left;}
 #days-panel .days-temp_c .value { font-size: 50px; text-align: center; }

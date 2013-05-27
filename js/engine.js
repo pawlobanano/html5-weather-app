@@ -117,6 +117,8 @@ app = {
 	swipeLeft: function() { 
 	
 		if( activePanel == 0 ) {
+			//$('.panel-wrap').css("margin-left", "-105%");
+			$('.panel-wrap').animate({marginLeft: "-105%"}, 500);
 			app.showDaysPanel();
 		}
 	
@@ -124,7 +126,8 @@ app = {
 
 	swipeRight: function() { 
 	
-		if( activePanel == 1 ) {	
+		if( activePanel == 1 ) {
+			$('.panel-wrap').animate({marginLeft: "0"}, 500);
 			app.showMainPanel();
 		}
 	},
@@ -132,6 +135,7 @@ app = {
 	swipeUp: function() { 
 	
 		if( activePanel != 2 && activePanel != 1) {
+			$('.panel-wrap').animate({marginTop: "-120%"}, 500);
 			app.showSettingsPanel();
 		}
 	
@@ -140,6 +144,7 @@ app = {
 	swipeDown: function() { 
 	
 		if( activePanel == 2 ) {
+			$('.panel-wrap').animate({marginTop: "0"}, 500);
 			app.showMainPanel();
 		}
 
@@ -147,22 +152,20 @@ app = {
 	
 	showMainPanel: function() {
 		
-		$('.panel').hide();
-		main_panel.show();
+		//$('.panel').hide();
+		//main_panel.show();
 		activePanel = 0;
 				
 	},	
 	showDaysPanel: function() {
-		
-		$('.panel').hide();
-		days_panel.show();
+
 		activePanel = 1;
 		
-	},	
+	},
 	showSettingsPanel: function() {
 		
-		$('.panel').hide();
-		settings_panel.show();
+		//$('.panel').hide();
+		//settings_panel.show();
 		activePanel = 2;
 		
 	}				

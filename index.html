@@ -31,147 +31,149 @@
 
     	<div id="app">
 	    	
-	    	<div class="panel" id="main-panel">
-		    	
-		    	<div class="panel-contents">
-		    	
+	    	<div class="panel-wrap">
+	    	
+		    	<div class="panel" id="main-panel">
 			    	
-			    	<div class="top-left">
-				    	<span class="now">teraz:</span>
-				    	<span class="city-date"><span class="city"></span>, <span class="date"></span></span>
-			    	</div>
+			    	<div class="panel-contents">
 			    	
-			    	<div class="temp-wrap">
-				    	<div class="temp_c">
-					    	<span class="value"></span>
-					    	<p class="label">średnia</p>
+				    	
+				    	<div class="top-left">
+					    	<span class="now">teraz:</span>
+					    	<span class="city-date"><span class="city"></span>, <span class="date"></span></span>
 				    	</div>
 				    	
-				    	<div class="feelslike_c">
-					    	<span class="value"></span>
-					    	<p class="label">odczuwalna</p>
-				    	</div>			    	
-			    	</div>
-			    	<div class="sky">
-				    	<div class="sky-image"></div>
-				    	<div class="desc">
-					    	<p>niewielkie zachmurzenie</p>
+				    	<div class="temp-wrap">
+					    	<div class="temp_c">
+						    	<span class="value"></span>
+						    	<p class="label">średnia</p>
+					    	</div>
+					    	
+					    	<div class="feelslike_c">
+						    	<span class="value"></span>
+						    	<p class="label">odczuwalna</p>
+					    	</div>			    	
 				    	</div>
+				    	<div class="sky">
+					    	<div class="sky-image"></div>
+					    	<div class="desc">
+						    	<p>niewielkie zachmurzenie</p>
+					    	</div>
+				    	</div>
+				    	
+				    	<div class="more-info">
+					    					    	
+				    	</div>
+				    	
+				    	
+				    	
+	                
+	                </div><!-- / panel contents -->
+	
+		    	</div><!-- / main panel -->
+		    	
+		    	
+		    	<div class="panel" id="days-panel">
+			    	
+			    	<div class="panel-contents">
+			    					    				    	
+	                	<article class="cf">
+		                	
+		                	<div class="top-panel">
+			                	<span class="days-city">Wrocław</span> <span class="days-date">27/05/2013</span>
+		                	</div>
+		                	
+		                	<div class="days-temp_c left">
+			                	
+			                	<span class="value">10</span>
+			                	
+		                	</div>
+		                	
+		                	<div class="days-more-info">
+			                	
+			                	<p class="sky">lekkie zachmurzenie</p>
+			                	<p class="pressure">ciśnienie: <span class="value">1000</span></p>
+			                	<p class="more">asd as dasd asd</p>
+			                
+		                	</div>
+		                	
+	                	</article><!-- single day -->
+	
+	                	<article class="cf">
+		                	
+		                	<div class="top-panel">
+			                	<span class="days-city">Wrocław</span> <span class="days-date">27/05/2013</span>
+		                	</div>
+		                	
+		                	<div class="days-temp_c left">
+			                	
+			                	<span class="value">10</span>
+			                	
+		                	</div>
+		                	
+		                	<div class="days-more-info">
+			                	
+			                	<p class="sky">lekkie zachmurzenie</p>
+			                	<p class="pressure">ciśnienie: <span class="value">1000</span></p>
+			                	<p class="more">asd as dasd asd</p>
+			                
+		                	</div>
+		                	
+	                	</article><!-- single day -->
+	                	
+	                	<article class="cf">
+		                	
+		                	<div class="top-panel">
+			                	<span class="days-city">Wrocław</span> <span class="days-date">27/05/2013</span>
+		                	</div>
+		                	
+		                	<div class="days-temp_c left">
+			                	
+			                	<span class="value">10</span>
+			                	
+		                	</div>
+		                	
+		                	<div class="days-more-info">
+			                	
+			                	<p class="sky">lekkie zachmurzenie</p>
+			                	<p class="pressure">ciśnienie: <span class="value">1000</span></p>
+			                	<p class="more">asd as dasd asd</p>
+			                
+		                	</div>
+		                	
+	                	</article><!-- single day -->                	                
+	                </div><!-- / panel contents -->
+	
+		    	</div><!-- / days panel -->
+		    	
+		    	<div class="panel" id="settings-panel">
+			    	
+			    	<div class="panel-contents">
+				    	
+						<div class="top-panel">panel ustawien</div>
+									    	
 			    	</div>
 			    	
-			    	<div class="more-info">
-				    					    	
+		    	</div><!-- / settings panel -->
+		    	
+		    	<div class="panel" id="new-city-panel" style="display:none;">
+			    	
+			    	<div class="panel-contents">
+				    	
+				    	<?php //include('lib/api/getWeather.php'); ?>
+		                <h2>Wpisz szukane miasto w formularzu</h2>
+		                <form method="post" action="">
+		
+		                    <input type="text" name="location" value="Wroclaw" />
+		                    <input type="submit" name="submit"/>
+		
+		                </form>
+				    	
+				    	
 			    	</div>
 			    	
-			    	
-			    	
-                
-                </div><!-- / panel contents -->
-
-	    	</div><!-- / main panel -->
-	    	
-	    	
-	    	<div class="panel" id="days-panel">
-		    	
-		    	<div class="panel-contents">
-		    					    				    	
-                	<article class="cf">
-	                	
-	                	<div class="top-panel">
-		                	<span class="days-city">Wrocław</span> <span class="days-date">27/05/2013</span>
-	                	</div>
-	                	
-	                	<div class="days-temp_c left">
-		                	
-		                	<span class="value">10</span>
-		                	
-	                	</div>
-	                	
-	                	<div class="days-more-info">
-		                	
-		                	<p class="sky">lekkie zachmurzenie</p>
-		                	<p class="pressure">ciśnienie: <span class="value">1000</span></p>
-		                	<p class="more">asd as dasd asd</p>
-		                
-	                	</div>
-	                	
-                	</article><!-- single day -->
-
-                	<article class="cf">
-	                	
-	                	<div class="top-panel">
-		                	<span class="days-city">Wrocław</span> <span class="days-date">27/05/2013</span>
-	                	</div>
-	                	
-	                	<div class="days-temp_c left">
-		                	
-		                	<span class="value">10</span>
-		                	
-	                	</div>
-	                	
-	                	<div class="days-more-info">
-		                	
-		                	<p class="sky">lekkie zachmurzenie</p>
-		                	<p class="pressure">ciśnienie: <span class="value">1000</span></p>
-		                	<p class="more">asd as dasd asd</p>
-		                
-	                	</div>
-	                	
-                	</article><!-- single day -->
-                	
-                	<article class="cf">
-	                	
-	                	<div class="top-panel">
-		                	<span class="days-city">Wrocław</span> <span class="days-date">27/05/2013</span>
-	                	</div>
-	                	
-	                	<div class="days-temp_c left">
-		                	
-		                	<span class="value">10</span>
-		                	
-	                	</div>
-	                	
-	                	<div class="days-more-info">
-		                	
-		                	<p class="sky">lekkie zachmurzenie</p>
-		                	<p class="pressure">ciśnienie: <span class="value">1000</span></p>
-		                	<p class="more">asd as dasd asd</p>
-		                
-	                	</div>
-	                	
-                	</article><!-- single day -->                	                
-                </div><!-- / panel contents -->
-
-	    	</div><!-- / days panel -->
-	    	
-	    	<div class="panel" id="settings-panel">
-		    	
-		    	<div class="panel-contents">
-			    	
-					<div class="top-panel">panel ustawien</div>
-								    	
-		    	</div>
-		    	
-	    	</div><!-- / settings panel -->
-	    	
-	    	<div class="panel" id="new-city-panel">
-		    	
-		    	<div class="panel-contents">
-			    	
-			    	<?php //include('lib/api/getWeather.php'); ?>
-	                <h2>Wpisz szukane miasto w formularzu</h2>
-	                <form method="post" action="">
-	
-	                    <input type="text" name="location" value="Wroclaw" />
-	                    <input type="submit" name="submit"/>
-	
-	                </form>
-			    	
-			    	
-		    	</div>
-		    	
-	    	</div><!-- /new city panel -->
-	    	
+		    	</div><!-- /new city panel -->
+	    	</div><!-- / panel wrap -->
     	</div><!-- / main app screen -->
 
     	
