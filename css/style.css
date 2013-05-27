@@ -65,6 +65,7 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 
 .sky .sky-6 { background: url(../images/tick/light_rain.png) no-repeat center center; }
 .sky .sky-8 { background: url(../images/tick/sunny.png) no-repeat center center; }
+.sky .sky-12 { background: url(../images/tick/light_rain.png) no-repeat center center; }
 .sky .sky-23 { background: url(../images/tick/cloudy1.png) no-repeat center center; }
 .sky .sky-17 { background: url(../images/tick/cloudy2.png) no-repeat center center; }
 .sky .sky-14 { background: url(../images/tick/cloudy4.png) no-repeat center center;  }
