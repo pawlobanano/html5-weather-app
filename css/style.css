@@ -20,9 +20,9 @@ font-family: 'Quicksand', sans-serif;
 }
 .hidden { display: none; }
 
-#app { width: 100%; height: 100%; overflow: hidden; position: relative }
+#app { width: 100%; height: 100%; overflow: hidden; position: relative; overflow: hidden; }
 .panel-wrap { position: relative; width: 100%; height: 100%; }
-.panel { width: 90%; height: 80%; position: absolute; background: #fafafa; left: 5%; top: 5%; }
+.panel { width: 90%; height: 80%; position: absolute; background: #fafafa; left: 5%; top: 5%; overflow: hidden; }
 
 h1 { color: #4d6171; text-align: center; font-size: 2em; }
 h1 span { color: #8a9db7; font-size: 0.8em; }
