@@ -135,7 +135,7 @@ app = {
 	swipeUp: function() { 
 	
 		if( activePanel != 2 && activePanel != 1) {
-			$('.panel-wrap').animate({marginTop: "-120%"}, 500);
+			$('.panel-wrap').animate({marginTop: "-200%"}, 500);
 			app.showSettingsPanel();
 		}
 	
