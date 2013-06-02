@@ -42,10 +42,15 @@
     	'fcttext_metric'=> $fcttext_metric,
     	'pressure_mb'	=> $pressure_mb
     );
-    echo json_encode($arr);
+    //echo json_encode($arr); <!--  tutaj zwraca do ajaxa, odkomentować by dziłało w panelu apki -->
     
-    //temp_c = 1;
     
+    $json_string2    = file_get_contents("http://api.wunderground.com/api/39a31a215185cabd/geolookup/forecast/conditions/lang:PL/q/wroclaw.json");
+    $parsed_json2 = json_decode($json_string2, true);
+    
+    
+    print_r( $parsed_json2['forecast'] );
+    //echo $parsed_json2['forecast']['forecastday'];
     
     
     //echo json_encode( $temp_c );
