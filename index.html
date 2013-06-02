@@ -156,7 +156,7 @@
 			    	
 		    	</div><!-- / settings panel -->
 		    	
-		    	<div class="panel" id="new-city-panel" style="display:none;">
+		    	<div class="panel" id="second-location">
 			    	
 			    	<div class="panel-contents">
 				    	
@@ -164,10 +164,16 @@
 		                <h2>Wpisz szukane miasto w formularzu</h2>
 		                <form method="post" action="">
 		
-		                    <input type="text" name="location" value="Wroclaw" />
-		                    <input type="submit" name="submit"/>
+		                    <input type="text" name="location" value="Wroclaw" id="locInput"/>
+		                    <button class="submit">sprawdź pogodę</button>
 		
 		                </form>
+		                
+		                <div class="loc2-weather">
+			                
+			                <span class="loc2-temp"></span>
+			                
+		                </div>
 				    	
 				    	
 			    	</div>

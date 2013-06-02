@@ -10,10 +10,11 @@
 
     // Api logic
     $json_string    = file_get_contents("http://api.wunderground.com/api/$API_KEY/geolookup/forecast/conditions/lang:PL/q/$loc.json");
-    $parsed_json    = json_decode($json_string);
+    $parsed_json    = json_decode($json_string, true);
 
     
     // Get information from API query
+    /*
     $city           = $parsed_json  ->  {'location'}            ->  {'city'};
     $country_name   = $parsed_json  ->  {'location'}            ->  {'country_name'};
     
@@ -27,11 +28,14 @@
     $weather        = $parsed_json  ->  {'current_observation'} ->  {'weather'};    
     $visibility_km  = $parsed_json  ->  {'current_observation'} ->  {'visibility_km'};
     $fcttext_metric = $parsed_json 	-> 	{'forecast'} 			-> 	{'forecastday'} 	-> {'fcttext_metric'};
-    
-    //$weather_data = array( $temp_c );
-    
-    //echo json_encode( $weather_data );
-    
+    */
+
+    $city = 					$parsed_json['location']['city'];
+    $temp_c = 					$parsed_json['current_observation']['temp_c'];
+    $weather = 					$parsed_json['current_observation']['weather'];
+    $feelslike_c = 				$parsed_json['current_observation']['feelslike_c'];
+    $fcttext_metric = 			"";
+    $pressure_mb = 				$parsed_json['current_observation']['pressure_mb'];
     
     
     $arr = array (

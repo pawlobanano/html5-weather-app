@@ -2,7 +2,15 @@ $(document).ready( function() {
 	
 	app.init();
 	
-	
+	$('.submit').click( function(event) {
+		
+		event.preventDefault();
+		//alert('ads');
+		
+		app.locWeather();
+		
+		return false;
+	});
 
 
 	$(".panel").swipe( {

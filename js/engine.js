@@ -17,6 +17,7 @@ app = {
 		
 		main_panel = $('#main-panel');
 		days_panel = $('#days-panel');
+		secondloc_panel = $('#second-location');
 		settings_panel = $('#settings-panel');
 		
 		main_panel.show();
@@ -112,6 +113,32 @@ app = {
 		$('.sky-image').addClass( 'sky-'+sky.length );
 		
 	},
+	
+	locWeather: function() {
+	
+		var loc2 = $('#locInput').val();
+		
+		$.ajax({
+			type: "POST",
+             url: "lib/api/getWeather.php",
+             dataType: 'json',
+             data: {
+                 location: loc2,
+             },
+             success: function( data ) {
+
+	             $('.loc2-temp').text( data.temp_c );
+                 
+             },
+             error: function () {
+	             
+	             alert("Błąd podczas pobierania danych");
+	             
+             }
+        });			
+		
+	},
+	
 
 	
 	swipeLeft: function() { 
@@ -134,10 +161,11 @@ app = {
 	
 	swipeUp: function() { 
 	
-		if( activePanel != 2 && activePanel != 1) {
+		if( activePanel == 3 || activePanel == 0) {
 			$('.panel-wrap').animate({marginTop: -$(document).height()}, 500);
 			app.showSettingsPanel();
 		}
+		
 	
 	},
 	
@@ -146,6 +174,9 @@ app = {
 		if( activePanel == 2 ) {
 			$('.panel-wrap').animate({marginTop: "0"}, 500);
 			app.showMainPanel();
+		} else if( activePanel == 0) {
+			$('.panel-wrap').animate( {marginTop: $(document).height() }, 500 );
+			app.showSecondLocPanel();
 		}
 
 	},
@@ -168,6 +199,10 @@ app = {
 		//settings_panel.show();
 		activePanel = 2;
 		
+	},
+	showSecondLocPanel: function() {
+		
+		activePanel = 3;
 	}				
 	
 }
