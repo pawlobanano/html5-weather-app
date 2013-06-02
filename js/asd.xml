@@ -1,0 +1,564 @@
+
+{
+	"response": {
+		"version": "0.1"
+		,"termsofService": "http://www.wunderground.com/weather/api/d/terms.html"
+		,"features": {
+		"geolookup": 1
+		,
+		"forecast": 1
+		,
+		"conditions": 1
+		}
+	}
+		,	"location": {
+		"type":"INTLCITY",
+		"country":"PL",
+		"country_iso3166":"PL",
+		"country_name":"Polska",
+		"state":"",
+		"city":"Wrocław",
+		"tz_short":"CEST",
+		"tz_long":"Europe/Warsaw",
+		"lat":"51.099998",
+		"lon":"16.879999",
+		"zip":"00000",
+		"magic":"1",
+		"wmo":"12424",
+		"l":"/q/zmw:00000.1.12424",
+		"requesturl":"global/stations/12424.html",
+		"wuiurl":"http://www.wunderground.com/global/stations/12424.html",
+		"nearby_weather_stations": {
+		"airport": {
+		"station": [
+		{ "city":"Wroclaw Ii", "state":"", "country":"Poland", "icao":"EPWR", "lat":"51.09999847", "lon":"16.88333321" },
+		{ "city":"Wroclaw", "state":"", "country":"PL", "icao":"EPWR", "lat":"51.09999847", "lon":"16.87999916" }
+		]
+		}
+		,
+		"pws": {
+		"station": [
+		{
+		"neighborhood":"Smolec",
+		"city":"Smolec",
+		"state":"DOLNY%U015BL%U0105SK",
+		"country":"POLAND",
+		"id":"IDOLNYU03",
+		"lat":51.086998,
+		"lon":16.906256,
+		"distance_km":2,
+		"distance_mi":1
+		},
+		{
+		"neighborhood":"Wroclaw - Zerniki",
+		"city":"Wroclaw",
+		"state":"DOLNOSLASKIE",
+		"country":"POLAND",
+		"id":"IDOLNOU011",
+		"lat":51.121380,
+		"lon":16.924484,
+		"distance_km":3,
+		"distance_mi":2
+		},
+		{
+		"neighborhood":"APRSWXNET Wroclaw PL",
+		"city":"Wroclaw",
+		"state":"",
+		"country":"PL",
+		"id":"MAT309",
+		"lat":51.165249,
+		"lon":16.898970,
+		"distance_km":7,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Wroclaw-Karlowice",
+		"city":"WROC%u0141AW",
+		"state":"DOLNO%U015BL%U0105SKIE",
+		"country":"POLAND",
+		"id":"IDOLNOU013",
+		"lat":51.135464,
+		"lon":17.050621,
+		"distance_km":12,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Wroclaw",
+		"city":"Kielczow",
+		"state":"Dolnoslaskie",
+		"country":"Poland",
+		"id":"IDOLNOSL3",
+		"lat":51.132545,
+		"lon":17.175255,
+		"distance_km":20,
+		"distance_mi":12
+		}
+		]
+		}
+		}
+	}
+		,	"current_observation": {
+		"image": {
+		"url":"http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Wrocław, Polska",
+		"city":"Wrocław",
+		"state":"",
+		"state_name":"Polska",
+		"country":"PL",
+		"country_iso3166":"PL",
+		"zip":"00000",
+		"latitude":"51.099998",
+		"longitude":"16.879999",
+		"elevation":"121.00000000"
+		},
+		"observation_location": {
+		"full":"Wroclaw, ",
+		"city":"Wroclaw",
+		"state":"",
+		"country":"PL",
+		"country_iso3166":"PL",
+		"latitude":"51.09999847",
+		"longitude":"16.87999916",
+		"elevation":"397 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"EPWR",
+		"observation_time":"Last Updated on maj 27, 16:00 CEST",
+		"observation_time_rfc822":"Mon, 27 May 2013 16:00:00 +0200",
+		"observation_epoch":"1369663200",
+		"local_time_rfc822":"Mon, 27 May 2013 16:21:16 +0200",
+		"local_epoch":"1369664476",
+		"local_tz_short":"CEST",
+		"local_tz_long":"Europe/Warsaw",
+		"local_tz_offset":"+0200",
+		"weather":"przewaga chmur",
+		"temperature_string":"61 F (16 C)",
+		"temp_f":61,
+		"temp_c":16,
+		"relative_humidity":"52%",
+		"wind_string":"From the WNW at 6 MPH",
+		"wind_dir":"WNW",
+		"wind_degrees":300,
+		"wind_mph":6,
+		"wind_gust_mph":0,
+		"wind_kph":9,
+		"wind_gust_kph":0,
+		"pressure_mb":"1006",
+		"pressure_in":"29.71",
+		"pressure_trend":"0",
+		"dewpoint_string":"43 F (6 C)",
+		"dewpoint_f":43,
+		"dewpoint_c":6,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"61 F (16 C)",
+		"feelslike_f":"61",
+		"feelslike_c":"16",
+		"visibility_mi":"6.2",
+		"visibility_km":"10.0",
+		"solarradiation":"",
+		"UV":"3",
+		"precip_1hr_string":"-9999.00 in (-9999.00 mm)",
+		"precip_1hr_in":"-9999.00",
+		"precip_1hr_metric":"-9999.00",
+		"precip_today_string":"0.00 in (0.0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0.0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/12424.html",
+		"history_url":"http://www.wunderground.com/history/airport/EPWR/2013/5/27/DailyHistory.html",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=51.09999847,16.87999916"
+	}
+		,
+	"forecast":{
+		"txt_forecast": {
+		"date":"2:00 AM CEST",
+		"forecastday": [
+		{
+		"period":0,
+		"icon":"chancerain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+		"title":"Poniedziałek",
+		"fcttext":"Możliwy deszcz. Maks.: 63F. Light Wind. Prawdop. opadów 40%.",
+		"fcttext_metric":"Możliwy deszcz. Maks.: 17C. Light Wind. Prawdop. opadów 40%.",
+		"pop":"40"
+		}
+		,
+		{
+		"period":1,
+		"icon":"chancerain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+		"title":"Poniedziałek wieczór i noc",
+		"fcttext":"Możliwy deszcz. Min.: 46F. Prędkość wiatru: 5-10 mph. Kierunek wiatru: zachodni. Prawdop. opadów 70%.",
+		"fcttext_metric":"Możliwy deszcz. Min.: 8C. Prędkość wiatru: 10-15 km/h. Kierunek wiatru: zachodni. Prawdop. opadów 70%.",
+		"pop":"70"
+		}
+		,
+		{
+		"period":2,
+		"icon":"rain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/rain.gif",
+		"title":"Wtorek",
+		"fcttext":"Deszcz. Maks.: 64F. Prędkość wiatru: 5-15 mph. Kierunek wiatru: PdZd. Prawdop. opadów 90%.",
+		"fcttext_metric":"Deszcz. Maks.: 18C. Prędkość wiatru: 10-20 km/h. Kierunek wiatru: PdZd. Prawdop. opadów 90%.",
+		"pop":"90"
+		}
+		,
+		{
+		"period":3,
+		"icon":"chancerain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+		"title":"Wtorek wieczór i noc",
+		"fcttext":"Deszcz. Min.: 48F. Prędkość wiatru: 5-10 mph. Kierunek wiatru: PdPdWs. Prawdop. opadów 50%.",
+		"fcttext_metric":"Deszcz. Min.: 9C. Prędkość wiatru: 10-15 km/h. Kierunek wiatru: PdPdWs. Prawdop. opadów 50%.",
+		"pop":"50"
+		}
+		,
+		{
+		"period":4,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"Środa",
+		"fcttext":"Możliwe burze. Maks.: 72F. Prędkość wiatru: 10-15 mph. Kierunek wiatru: PdPdWs. Prawdop. opadów 40%.",
+		"fcttext_metric":"Możliwe burze. Maks.: 22C. Prędkość wiatru: 15-20 km/h. Kierunek wiatru: PdPdWs. Prawdop. opadów 40%.",
+		"pop":"40"
+		}
+		,
+		{
+		"period":5,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"Środa wieczór i noc",
+		"fcttext":"Możliwe burze. Min.: 54F. Prędkość wiatru: 5-10 mph. Kierunek wiatru: PdZd. Prawdop. opadów 30%.",
+		"fcttext_metric":"Możliwe burze. Min.: 12C. Prędkość wiatru: 5-15 km/h. Kierunek wiatru: PdZd. Prawdop. opadów 30%.",
+		"pop":"30"
+		}
+		,
+		{
+		"period":6,
+		"icon":"chancerain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+		"title":"Czwartek",
+		"fcttext":"Możliwy deszcz. Maks.: 70F. Prędkość wiatru: 5-10 mph. Kierunek wiatru: PnPnZd. Prawdop. opadów 70%.",
+		"fcttext_metric":"Możliwy deszcz. Maks.: 21C. Prędkość wiatru: 5-15 km/h. Kierunek wiatru: PnPnZd. Prawdop. opadów 70%.",
+		"pop":"70"
+		}
+		,
+		{
+		"period":7,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"Czwartek wieczór i noc",
+		"fcttext":"Możliwy deszcz. Min.: 50F. Prędkość wiatru: 10-15 mph. Kierunek wiatru: PdPdWs. Prawdop. opadów 30%.",
+		"fcttext_metric":"Możliwy deszcz. Min.: 10C. Prędkość wiatru: 15-25 km/h. Kierunek wiatru: PdPdWs. Prawdop. opadów 30%.",
+		"pop":"30"
+		}
+		]
+		},
+		"simpleforecast": {
+		"forecastday": [
+		{"date":{
+	"epoch":"1369688400",
+	"pretty":"11:00 PM CEST on May 27, 2013",
+	"day":27,
+	"month":5,
+	"year":2013,
+	"yday":146,
+	"hour":23,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"maj",
+	"weekday_short":"Pn.",
+	"weekday":"Poniedziałek",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Warsaw"
+},
+		"period":1,
+		"high": {
+		"fahrenheit":"63",
+		"celsius":"17"
+		},
+		"low": {
+		"fahrenheit":"46",
+		"celsius":"8"
+		},
+		"conditions":"możliwy deszcz",
+		"icon":"chancerain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+		"skyicon":"partlycloudy",
+		"pop":40,
+		"qpf_allday": {
+		"in": 0.05,
+		"mm": 1.3
+		},
+		"qpf_day": {
+		"in": 0.01,
+		"mm": 0.3
+		},
+		"qpf_night": {
+		"in": 0.09,
+		"mm": 2.3
+		},
+		"snow_allday": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_day": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_night": {
+		"in": 0,
+		"cm": 0
+		},
+		"maxwind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "PdPdWs",
+		"degrees": 162
+		},
+		"avewind": {
+		"mph": 4,
+		"kph": 6,
+		"dir": "PdPdZd",
+		"degrees": 212
+		},
+		"avehumidity": 68,
+		"maxhumidity": 81,
+		"minhumidity": 50
+		}
+		,
+		{"date":{
+	"epoch":"1369774800",
+	"pretty":"11:00 PM CEST on May 28, 2013",
+	"day":28,
+	"month":5,
+	"year":2013,
+	"yday":147,
+	"hour":23,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"maj",
+	"weekday_short":"Wt.",
+	"weekday":"Wtorek",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Warsaw"
+},
+		"period":2,
+		"high": {
+		"fahrenheit":"64",
+		"celsius":"18"
+		},
+		"low": {
+		"fahrenheit":"48",
+		"celsius":"9"
+		},
+		"conditions":"deszcz",
+		"icon":"rain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/rain.gif",
+		"skyicon":"mostlycloudy",
+		"pop":90,
+		"qpf_allday": {
+		"in": 0.48,
+		"mm": 12.2
+		},
+		"qpf_day": {
+		"in": 0.40,
+		"mm": 10.2
+		},
+		"qpf_night": {
+		"in": 0.04,
+		"mm": 1.0
+		},
+		"snow_allday": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_day": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_night": {
+		"in": 0,
+		"cm": 0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "ZdPdZd",
+		"degrees": 248
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "PdPdZd",
+		"degrees": 213
+		},
+		"avehumidity": 76,
+		"maxhumidity": 89,
+		"minhumidity": 66
+		}
+		,
+		{"date":{
+	"epoch":"1369861200",
+	"pretty":"11:00 PM CEST on May 29, 2013",
+	"day":29,
+	"month":5,
+	"year":2013,
+	"yday":148,
+	"hour":23,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"maj",
+	"weekday_short":"Śr.",
+	"weekday":"Środa",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Warsaw"
+},
+		"period":3,
+		"high": {
+		"fahrenheit":"72",
+		"celsius":"22"
+		},
+		"low": {
+		"fahrenheit":"54",
+		"celsius":"12"
+		},
+		"conditions":"możliwe burze",
+		"icon":"chancetstorms",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancetstorms.gif",
+		"skyicon":"mostlycloudy",
+		"pop":40,
+		"qpf_allday": {
+		"in": 0.20,
+		"mm": 5.1
+		},
+		"qpf_day": {
+		"in": 0.11,
+		"mm": 2.8
+		},
+		"qpf_night": {
+		"in": 0.08,
+		"mm": 2.0
+		},
+		"snow_allday": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_day": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_night": {
+		"in": 0,
+		"cm": 0
+		},
+		"maxwind": {
+		"mph": 12,
+		"kph": 19,
+		"dir": "PdPdWs",
+		"degrees": 156
+		},
+		"avewind": {
+		"mph": 9,
+		"kph": 14,
+		"dir": "PdPdWs",
+		"degrees": 153
+		},
+		"avehumidity": 75,
+		"maxhumidity": 88,
+		"minhumidity": 61
+		}
+		,
+		{"date":{
+	"epoch":"1369947600",
+	"pretty":"11:00 PM CEST on May 30, 2013",
+	"day":30,
+	"month":5,
+	"year":2013,
+	"yday":149,
+	"hour":23,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"maj",
+	"weekday_short":"Cz.",
+	"weekday":"Czwartek",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Warsaw"
+},
+		"period":4,
+		"high": {
+		"fahrenheit":"70",
+		"celsius":"21"
+		},
+		"low": {
+		"fahrenheit":"50",
+		"celsius":"10"
+		},
+		"conditions":"możliwy deszcz",
+		"icon":"chancerain",
+		"icon_url":"http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+		"skyicon":"cloudy",
+		"pop":70,
+		"qpf_allday": {
+		"in": 0.33,
+		"mm": 8.4
+		},
+		"qpf_day": {
+		"in": 0.26,
+		"mm": 6.6
+		},
+		"qpf_night": {
+		"in": 0.08,
+		"mm": 2.0
+		},
+		"snow_allday": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_day": {
+		"in": 0,
+		"cm": 0
+		},
+		"snow_night": {
+		"in": 0,
+		"cm": 0
+		},
+		"maxwind": {
+		"mph": 8,
+		"kph": 13,
+		"dir": "PnPnZd",
+		"degrees": 337
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "PnPnZd",
+		"degrees": 335
+		},
+		"avehumidity": 71,
+		"maxhumidity": 84,
+		"minhumidity": 65
+		}
+		]
+		}
+	}
+}
