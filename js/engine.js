@@ -169,7 +169,7 @@ app = {
 	
 	swipeLeft: function() { 
 	
-		alert(activePanel);
+		
 		if( activePanel == 0 ) {
 			//$('.panel-wrap').css("margin-left", "-105%");
 			$('.panel-wrap').animate({marginLeft: "-105%" }, 500);
