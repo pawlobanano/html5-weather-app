@@ -15,12 +15,17 @@ app = {
 		app_panel.css('width', $(window).width() );
 		app_panel.css('height', $(window).height() );
 		
+		x = $('.panel-wrap').width();
+		y = $('.panel-wrap').height();
+		
+
+		
 		main_panel = $('#main-panel');
 		days_panel = $('#days-panel');
 		secondloc_panel = $('#second-location');
 		settings_panel = $('#settings-panel');
 		
-		secondloc_panel.css("top", -$(document).height() );
+		secondloc_panel.css("left", "-95%" );
 				
 		main_panel.show();
 		activePanel = 0;
@@ -51,7 +56,7 @@ app = {
 		
 		$('span.date').html( today );
 		
-		
+			
 		if (navigator.geolocation)
 		{
 			navigator.geolocation.getCurrentPosition(showPosition);
@@ -145,10 +150,15 @@ app = {
 	
 	swipeLeft: function() { 
 	
+		alert(activePanel);
 		if( activePanel == 0 ) {
 			//$('.panel-wrap').css("margin-left", "-105%");
-			$('.panel-wrap').animate({marginLeft: "-105%"}, 500);
+			$('.panel-wrap').animate({marginLeft: "-105%" }, 500);
 			app.showDaysPanel();
+		}
+		if( activePanel == 3 ) {
+			$('.panel-wrap').animate({marginLeft: "0" }, 500);
+			app.showMainPanel();
 		}
 	
 	},
@@ -159,11 +169,16 @@ app = {
 			$('.panel-wrap').animate({marginLeft: "0"}, 500);
 			app.showMainPanel();
 		}
+		else if( activePanel == 0) {
+			
+			$('.panel-wrap').animate({marginLeft: "100%" }, 500);
+			app.showSecondLocPanel();
+		}
 	},
 	
 	swipeUp: function() { 
 	
-		if( activePanel == 3 || activePanel == 0) {
+		if( activePanel == 0) {
 			$('.panel-wrap').animate({marginTop: -$(document).height()}, 500);
 			app.showSettingsPanel();
 		}
@@ -176,9 +191,6 @@ app = {
 		if( activePanel == 2 ) {
 			$('.panel-wrap').animate({marginTop: "0"}, 500);
 			app.showMainPanel();
-		} else if( activePanel == 0) {
-			$('.panel-wrap').animate( {marginTop: $(document).height() }, 500 );
-			app.showSecondLocPanel();
 		}
 
 	},
@@ -208,11 +220,12 @@ app = {
 	},
 	showMoreInfo: function() {
 		$("#main-panel .more-info").show();
-		alert('show more info');
+		$("#main-panel span.city").html( "pincz!" );
+		
 	},			
 	hideMoreInfo: function() {
 		$("#main-panel .more-info").hide();
-		alert('hide more info');
+		
 	}
 	
 }
