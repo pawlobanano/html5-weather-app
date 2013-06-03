@@ -20,6 +20,8 @@ app = {
 		secondloc_panel = $('#second-location');
 		settings_panel = $('#settings-panel');
 		
+		secondloc_panel.css("top", -$(document).height() );
+				
 		main_panel.show();
 		activePanel = 0;
 		
