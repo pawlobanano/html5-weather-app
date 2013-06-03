@@ -25,6 +25,7 @@ $(document).ready( function() {
 		
 		swipeUp:function(event, direction, distance, duration, fingerCount) {
 		  app.swipeUp(); 
+		  alert('asd');
 		},
 		
 		swipeDown:function(event, direction, distance, duration, fingerCount) {
