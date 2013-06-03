@@ -7,7 +7,7 @@
     $_SESSION['location'] = $_POST['location'];
     $loc = $_POST['location'];
 
-    $loc = 'wroclaw';
+    
 
     // Api logic
     $json_string    = file_get_contents("http://api.wunderground.com/api/$API_KEY/geolookup/forecast/conditions/lang:PL/q/$loc.json");

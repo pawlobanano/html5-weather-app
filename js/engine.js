@@ -7,6 +7,9 @@ app = {
 		
 		app.getLocation();
 		app.getWeather();
+		app.getSecondLocWeather();
+		
+		
 		
 		latitude = 0;
 		longtitude = 0;
@@ -33,13 +36,7 @@ app = {
 		
 	},
 
-	getLocation: function() {
-
-
-		
-		
-		
-	},
+	getLocation: function() {},
 	
 	getWeather: function() {
 	
@@ -116,33 +113,55 @@ app = {
 	},
 	setSkyImage: function( sky ) {
 	
-		console.log( sky.length );
-		$('.sky-image').addClass( 'sky-'+sky.length );
+		//console.log( sky.length );
+		$('#main-panel .sky-image').addClass( 'sky-'+sky.length );
 		
 	},
+	getSecondLocWeather: function() {
 	
+		
+		if( localStorage['loc'] == 'undefined' ) {
+		
+			$('.second-loc-heading').html('brak wybranej lokacji, wpisz ją w powyższe pole');	
+			
+			
+		}
+		else {
+			$('.second-loc-heading').html('lokacja: ' + localStorage['loc']);
+			
+			$.ajax({
+				type: "POST",
+	             url: "lib/api/getWeather.php",
+	             dataType: 'json',
+	             data: {
+	                 location: localStorage['loc'],
+	             },
+	             success: function( data ) {
+	
+		             var desc = data.desc;
+		             $('.loc2-weather .value').text( data.temp_c );
+		             $('.loc2-weather .sky-image').addClass('sky-' + desc.length );
+		             $('.loc2-weather .sky .desc p').text( data.desc );
+		             $('.loc2-weather .more-info p').text( data.fcttext_metric );
+	                 
+	             },
+	             error: function () {
+		             
+		             alert("Błąd podczas pobierania danych");
+		             
+	             }
+	        });	
+		}
+		
+		
+	},
 	locWeather: function() {
 	
 		var loc2 = $('#locInput').val();
 		
-		$.ajax({
-			type: "POST",
-             url: "lib/api/getWeather.php",
-             dataType: 'json',
-             data: {
-                 location: loc2,
-             },
-             success: function( data ) {
-
-	             $('.loc2-temp').text( data.temp_c );
-                 
-             },
-             error: function () {
-	             
-	             alert("Błąd podczas pobierania danych");
-	             
-             }
-        });			
+		localStorage.setItem('loc', loc2);
+				
+		app.getSecondLocWeather();		
 		
 	},
 	
