@@ -30,7 +30,8 @@ $(document).ready( function() {
 		swipeDown:function(event, direction, distance, duration, fingerCount) {
 		  app.swipeDown(); 
 		},
-		pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+		pinchIn:function(event, direction, distance, duration, fingerCount, longTap) {
+			alert('longTap');
         	app.showMoreInfo();
         },
         pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {

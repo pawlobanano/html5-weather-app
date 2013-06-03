@@ -239,7 +239,7 @@ app = {
 	},
 	showMoreInfo: function() {
 		$("#main-panel .more-info").show();
-		$("#main-panel span.city").html( "pincz!" );
+		$("#main-panel span.city").html( "Long tap!" );
 		
 	},			
 	hideMoreInfo: function() {
