@@ -120,7 +120,7 @@ app = {
 	getSecondLocWeather: function() {
 	
 		
-		if( localStorage['loc'] == 'undefined' ) {
+		if( localStorage['loc'] === "undefined" ) {
 		
 			$('.second-loc-heading').html('brak wybranej lokacji, wpisz ją w powyższe pole');	
 			
