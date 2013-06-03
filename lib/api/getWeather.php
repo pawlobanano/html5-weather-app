@@ -7,6 +7,7 @@
     $_SESSION['location'] = $_POST['location'];
     $loc = $_POST['location'];
 
+    $loc = 'wroclaw';
 
     // Api logic
     $json_string    = file_get_contents("http://api.wunderground.com/api/$API_KEY/geolookup/forecast/conditions/lang:PL/q/$loc.json");
@@ -34,10 +35,11 @@
     $temp_c = 					$parsed_json['current_observation']['temp_c'];
     $weather = 					$parsed_json['current_observation']['weather'];
     $feelslike_c = 				$parsed_json['current_observation']['feelslike_c'];
-    $fcttext_metric = 			"";
+    $fcttext_metric = 			$parsed_json['forecast']['txt_forecast']['forecastday']['0']['fcttext_metric'];
     $pressure_mb = 				$parsed_json['current_observation']['pressure_mb'];
     
     
+    //print_r($fcttext_metric);
     $arr = array (
     	'city' 			=> $city,
     	'temp_c' 		=> $temp_c,

@@ -203,7 +203,13 @@ app = {
 	showSecondLocPanel: function() {
 		
 		activePanel = 3;
-	}				
+	},
+	showMoreInfo: function() {
+		$("#main-panel .more-info").show();
+	},			
+	hideMoreInfo: function() {
+		$("#main-panel .more-info").hide();
+	}
 	
 }
 

@@ -29,7 +29,14 @@ $(document).ready( function() {
 		
 		swipeDown:function(event, direction, distance, duration, fingerCount) {
 		  app.swipeDown(); 
-		}						
+		},
+		pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+        	app.showMoreInfo();
+        },
+        pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+          	app.hideMoreInfo();
+        },
+								
 		
     });
 	
