@@ -30,11 +30,10 @@ $(document).ready( function() {
 		swipeDown:function(event, direction, distance, duration, fingerCount) {
 		  app.swipeDown(); 
 		},
-		pinchIn:function(event, direction, distance, duration, fingerCount, longTap) {
-			alert('longTap');
+		longTap:function(event) {
         	app.showMoreInfo();
         },
-        pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+        doubleTap:function(event) {
           	app.hideMoreInfo();
         },
 								

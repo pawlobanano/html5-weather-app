@@ -142,7 +142,7 @@ app = {
 		             $('.loc2-weather .value').text( data.temp_c );
 		             $('.loc2-weather .sky-image').addClass('sky-' + desc.length );
 		             $('.loc2-weather .sky .desc p').text( data.desc );
-		             $('.loc2-weather .more-info p').text( data.fcttext_metric );
+		             $('.loc2-weather .more-info p').text( data.fcttext_metric ).hide;
 	                 
 	             },
 	             error: function () {
@@ -238,14 +238,13 @@ app = {
 		activePanel = 3;
 	},
 	showMoreInfo: function() {
-		$("#main-panel .more-info").show();
-		$("#main-panel span.city").html( "Long tap!" );
+		$("#main-panel .more-info").toggle();
 		
 	},			
-	hideMoreInfo: function() {
-		$("#main-panel .more-info").hide();
+	// hideMoreInfo: function() {
+	// 	$("#main-panel .more-info").hide();
 		
-	}
+	// }
 	
 }
 
