@@ -208,9 +208,11 @@ app = {
 	},
 	showMoreInfo: function() {
 		$("#main-panel .more-info").show();
+		alert('show more info');
 	},			
 	hideMoreInfo: function() {
 		$("#main-panel .more-info").hide();
+		alert('hide more info');
 	}
 	
 }
