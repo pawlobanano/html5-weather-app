@@ -61,7 +61,7 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #days-panel .days-more-info { float: left; width: 60%; margin-left: 20px; }
 #days-panel .days-more-info p { margin: 0 5px 3px 0; font-size: 0.8em;  }
 
-#second-location { position: absolute;  }
+#second-location { position: absolute; }
 
 .sky .sky-image { width: 100%; height: 128px; }
 
