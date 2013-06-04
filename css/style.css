@@ -48,8 +48,9 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #main-panel .more-info { margin: 30px 0 0; display: none; }
 #main-panel .more-info p { text-align: right; margin: 0 20px 10px 0; font-size: 0.9em; max-width: 60%; line-height: 1.3em; float: right; clear: both; }
 
-#settings-panel { text-align: center; font-size: 12px; top: 110%; }
-#settings-panel .api { position: absolute; bottom: 0; }
+#settings-panel { text-align: center; font-size: 12px; top: 110%; position: relative; }
+#settings-panel .api { position: relative; top: 20%; }
+#settings-panel .api .image { margin: 0; }
 #settings-panel .api .image img { width: 50%; height: 50%; margin: 0 auto; }
 
 #days-panel { position: absolute; left: 110%; }
@@ -66,7 +67,7 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #days-panel .temp_c_low .label { margin: 0; }
 
 #days-panel article { padding: 0px 0 20px; }
-#days-panel .more-info { float: left; width: 60%; margin-left: 20px; }
+#days-panel .more-info { float: left; width: 60%; margin-left: 20px; max-height: 85px; overflow: scroll; }
 #days-panel .more-info p { margin: 0 5px 3px 0; font-size: 0.8em;  }
 
 #second-location { position: absolute; }
@@ -75,9 +76,11 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 
 #second-location .loc2-temp { float: left; width: 40%; text-align: center; }
 #second-location .loc2-temp .value { font-size: 48px; text-align: center; position: relative; padding: 20px 0 0; } 
-#second-location .loc2-temp .value:after  { content: "o"; font-size: 20px; font-family: Arial, sans-serif; right: -10px; top: 25px; position: absolute; }
-#second-location .sky { width: 40%; float: right; }
+#second-location .loc2-temp .value:after  { content: "o"; font-size: 20px; font-family: Arial, sans-serif;  top: 25px; position: absolute; }
+#second-location .sky { width: 40%; float: right; margin: 0 20px 0 0; background-position: center center; }
 #second-location .more-info { clear: both; width: 90%; text-align: right; padding: 10px 0 0; }
+#second-location .label { margin: 0; }
+#second-location .desc p { margin: 5px 0 0; text-align: center;  }
 
 #second-location .second-loc-heading { font-size: 12px; text-align: center; margin: 5px 0 10px; }
 

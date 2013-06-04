@@ -128,8 +128,8 @@ app = {
 
 		// Dane pozyskane z ostatniego wywołania geolokacji
 		$("#days-panel #dayAfterTomorrow .city").html( data.city );
-		$("#days-panel #dayAfterTomorrow span.day").html( dd1 );
-		$("#days-panel #dayAfterTomorrow span.month").html( mm1 );
+		$("#days-panel #dayAfterTomorrow span.day").html( dd2 );
+		$("#days-panel #dayAfterTomorrow span.month").html( mm2 );
 		$("#days-panel #dayAfterTomorrow span.year").html( data.dayAfterTomorrow_year );
 		$("#days-panel #dayAfterTomorrow .temp-wrap .temp_c_high span.value").html( data.dayAfterTomorrow_high_celsius );
 		$("#days-panel #dayAfterTomorrow .temp-wrap .temp_c_low span.value").html( data.dayAfterTomorrow_low_celsius );
@@ -140,8 +140,8 @@ app = {
 
 		// Dane pozyskane z ostatniego wywołania geolokacji
 		$("#days-panel #twoDaysAfterTomorrow .city").html( data.city );
-		$("#days-panel #twoDaysAfterTomorrow span.day").html( dd1 );
-		$("#days-panel #twoDaysAfterTomorrow span.month").html( mm1 );
+		$("#days-panel #twoDaysAfterTomorrow span.day").html( dd3 );
+		$("#days-panel #twoDaysAfterTomorrow span.month").html( mm3 );
 		$("#days-panel #twoDaysAfterTomorrow span.year").html( data.twoDaysAfterTomorrow_year );
 		$("#days-panel #twoDaysAfterTomorrow .temp-wrap .temp_c_high span.value").html( data.twoDaysAfterTomorrow_high_celsius );
 		$("#days-panel #twoDaysAfterTomorrow .temp-wrap .temp_c_low span.value").html( data.twoDaysAfterTomorrow_low_celsius );
