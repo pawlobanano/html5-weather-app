@@ -35,7 +35,7 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #main-panel .temp-wrap { position: relative; height: 100px;  }
 #main-panel .temp_c { width: 100%; position: absolute; left: 0; text-align: center;  padding: 10px 0 10px; top: 0;  }
 #main-panel .temp_c .value { position: relative; font-size: 70px; line-height: 70px;  text-align: center; font-weight: 100; color: #353535; }
-#main-panel .temp_c .value:after { content: "o"; position: absolute; top: -20px; right: -15px; font-size: 24px; font-weight: bold; }
+#main-panel .temp_c .value:after { content: "o"; position: absolute; top: -20px; font-size: 24px; font-weight: bold; }
 #main-panel .temp_c .label { margin: 0; }
 
 #main-panel .feelslike_c { width: 100%; position: absolute; left: 0; text-align: center;  padding: 20px 0 10px; top: 0; display: none;  }
@@ -43,23 +43,31 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 #main-panel .feelslike_c .value:after { content: "o"; position: absolute; top: -20px; right: -15px; font-size: 24px; font-weight: bold; }
 #main-panel .feelslike_c .label { margin: 0; }
 #main-panel .sky { width: 100%;  left: 0;  margin: 20px 0 0; }
-#main-panel .sky .image { width: 220px; height: 150px; margin: 0  auto; }
+#main-panel .sky .image { width: 220px; height: 150px; margin: 0 auto; }
 #main-panel .sky p { margin: 0; text-align: center; padding: 0 5px 5px; }
 #main-panel .more-info { margin: 30px 0 0; display: none; }
 #main-panel .more-info p { text-align: right; margin: 0 20px 10px 0; font-size: 0.9em; max-width: 60%; line-height: 1.3em; float: right; clear: both; }
 
 #settings-panel { text-align: center; font-size: 12px; top: 110%; }
-
+#settings-panel .api { position: absolute; bottom: 0; }
+#settings-panel .api .image img { width: 50%; height: 50%; margin: 0 auto; }
 
 #days-panel { position: absolute; left: 110%; }
 #days-panel .top-panel { text-align: left; height: 20px; padding: 3px 0 0; text-indent: 20px; margin: 0 0 5px 0; }
-#days-panel .days-temp_c { width: 25%; position: relative; text-align: center; float: left;}
-#days-panel .days-temp_c .value { font-size: 50px; text-align: center; }
-#days-panel .days-temp_c .value:after  { content: "o"; font-size: 20px; font-family: Arial, sans-serif; right: 10px; top: 5px; position: absolute; }
+#days-panel .temp_c_high { width: 25%; position: relative; text-align: center; float: left;}
+#days-panel .temp_c_high .value { font-size: 50px; text-align: center; }
+#days-panel .temp_c_high .value:after  { content: "o"; font-size: 20px; font-family: Arial, sans-serif; top: 5px; position: absolute; }
+#days-panel .temp_c_high .label { margin: 0; }
+
+#days-panel .temp_c_low { width: 25%; position: relative; text-align: center; float: left;}
+#days-panel .temp_c_low .value { font-size: 50px; text-align: center; }
+#days-panel .temp_c_low .value:after  { content: "o"; font-size: 20px; font-family: Arial, sans-serif; top: 5px; position: absolute; }
+#days-panel .temp_c_low { margin: 0; display: none; }
+#days-panel .temp_c_low .label { margin: 0; }
 
 #days-panel article { padding: 0px 0 20px; }
-#days-panel .days-more-info { float: left; width: 60%; margin-left: 20px; }
-#days-panel .days-more-info p { margin: 0 5px 3px 0; font-size: 0.8em;  }
+#days-panel .more-info { float: left; width: 60%; margin-left: 20px; }
+#days-panel .more-info p { margin: 0 5px 3px 0; font-size: 0.8em;  }
 
 #second-location { position: absolute; }
 #second-location form { text-align: center; }
@@ -75,9 +83,9 @@ h1 span { color: #8a9db7; font-size: 0.8em; }
 
 .sky .sky-image { width: 100%; height: 128px; }
 
-.sky .sky-6 { background: url(../images/tick/light_rain.png) no-repeat center center; }
-.sky .sky-8 { background: url(../images/tick/sunny.png) no-repeat center center; }
-.sky .sky-12 { background: url(../images/tick/light_rain.png) no-repeat center center; }
-.sky .sky-23 { background: url(../images/tick/cloudy1.png) no-repeat center center; }
-.sky .sky-17 { background: url(../images/tick/cloudy2.png) no-repeat center center; }
-.sky .sky-14 { background: url(../images/tick/cloudy4.png) no-repeat center center;  }
+.sky .sky-6 { background: url(../img/tick/light_rain.png) no-repeat center center; }
+.sky .sky-8 { background: url(../img/tick/sunny.png) no-repeat center center; }
+.sky .sky-12 { background: url(../img/tick/light_rain.png) no-repeat center center; }
+.sky .sky-23 { background: url(../img/tick/cloudy1.png) no-repeat center center; }
+.sky .sky-17 { background: url(../img/tick/cloudy2.png) no-repeat center center; }
+.sky .sky-14 { background: url(../img/tick/cloudy4.png) no-repeat center center;  }

@@ -15,26 +15,28 @@ $(document).ready( function() {
 
 	$(".panel").swipe( {
 
-		swipeLeft:function(event, direction, distance, duration, fingerCount) {
+		swipeLeft:function() {
 		  app.swipeLeft(); 
 		},
 		
-		swipeRight:function(event, direction, distance, duration, fingerCount) {
+		swipeRight:function() {
 		  app.swipeRight(); 
 		},
 		
-		swipeUp:function(event, direction, distance, duration, fingerCount) {
+		swipeUp:function() {
 		  app.swipeUp(); 
 		},
 		
-		swipeDown:function(event, direction, distance, duration, fingerCount) {
+		swipeDown:function() {
 		  app.swipeDown(); 
 		},
-		longTap:function(event) {
+
+		longTap:function() {
         	app.showMoreInfo();
         },
-        doubleTap:function(event) {
-          	app.hideMoreInfo();
+        
+        doubleTap:function() {
+          	app.toggleDaysTemp();
         },
 								
 		
