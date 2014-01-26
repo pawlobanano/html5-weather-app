@@ -1,7 +1,7 @@
 <?php 
 
     // generated wunderground API key
-	$API_KEY = '39a31a215185cabd';
+    $API_KEY = '39a31a215185cabd';
 
     // Session handler
     $_SESSION['location'] = $_POST['location'];
